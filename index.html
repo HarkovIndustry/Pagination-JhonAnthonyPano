@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Spot</title>
+    <link rel="stylesheet" href="frameworks/bootstrap.min.css">
+    <link rel="stylesheet" href="frameworks/style.css">
+    <link rel="stylesheet" href="frameworks/fixscreen.css">
+</head>
+
+<body>
+    <div id="above"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top transition glass">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#above">Bohol Tour by Harkov</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav text-primary ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#above">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tourist-spots">Tourist Spots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Developer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <header class="container mt-5">
+        <h1 class="text-center">Tourist Spot</h1>
+    </header>
+    <section id="home" class="container mt-4">
+        <div class="text-center">
+            <h2 class="fw-bold text-primary">Welcome to Bohol</h2>
+            <p>Discover the stunning beauty and rich cultural heritage of Bohol. From pristine beaches to
+                historical landmarks and thrilling adventures, Bohol offers something for everyone. Explore the top
+                tourist spots and immerse yourself in the unique charm of this island paradise.</p>
+        </div>
+        <div id="anchorPage" class="mb-5"></div>
+    </section>
+    
+    <section id="tourist-spots" class="container rounded p-3 mt-4">
+        <div id="pagination" class="row"></div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center mt-3 d-flex flex-wrap" id="pagination-controls"></ul>
+        </nav>
+    </section>
+    <section id="about" class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8 col-md-7 mb-4">
+                <h2 class="fw-bold text-primary">About Us</h2>
+                <p class="lead">We are passionate about promoting the beauty and culture of Bohol. Our mission is to
+                    guide you through the most breathtaking tourist spots in Bohol, ensuring an unforgettable
+                    experience. Whether you're here for the pristine beaches, historical landmarks, or thrilling
+                    adventures, Bohol has something for everyone.</p>
+                <p class="lead">As a proud resident and developer of this project, I, <code>Jhon Anthony Pano</code>, am dedicated to
+                    providing you with the best information and tips to make your visit to Bohol truly special. <a
+                        href="https://harkovindustry.github.io/JPano-Portfolio/" target="_blank"
+                        class="text-primary fw-bold">View Developer's Portfolio</a></p>
+            </div>
+            <div class="col-lg-4 col-md-5 mb-4 text-center">
+                <img src="images/profile.jpg" class="img-fluid rounded-circle" alt="Jhon Anthony Pano">
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container mt-4">
+        <h2>Contact Developer</h2>
+        <p>If you have any questions or suggestions, please don't hesitate to reach out! I'm always here to listen, provide support, and engage with you. Your feedback and ideas are incredibly valuable, and I'm excited to connect and assist you in any way I can.</p>
+        <div class="row">
+            <div class="col-md-6 col-lg-5 col-lg-4 row">
+                <div class="col-4">
+                    <button class="btn cd"
+                        onclick="window.open('https://web.facebook.com/afacebookaccountwhosenamedjhon')">Facebook</button>
+                    <button class="btn cd"
+                        onclick="window.open('https://m.me/afacebookaccountwhosenamedjhon')">Messenger</button>
+                    <button class="btn cd" onclick="window.open('https://www.instagram.com/riupwe/')">Instagram</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn cd"
+                        onclick="window.open('https://join.skype.com/invite/qEbrchmcXIu8')">Skype</button>
+                    <button class="btn cd"
+                        onclick="window.open('https://www.linkedin.com/authwall?trk=gf&trkInfo=AQG-D06PFllcrwAAAZN9Ut24ZmePWL0e8JfqtMhuM-4T2WzKliuK-U9DOJxzwAqjI5en_NaInbce_kaYbCw6WuIOr7W9ZTrZLKXil6U2h34M82j-W7nDcHznt4ZRIbCOxADOvy4=&original_referer=https://harkovindustry.github.io/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjhon-anthony-pano-830242335%2F')">LinkedIn</button>
+                    <button class="btn cd" onclick="window.open('https://x.com/l_synapse')">X</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn cd" onclick="window.open('https://www.t.me/jacpano')">Telegram</button>
+                    <button class="btn cd"
+                        onclick="window.open('https://www.discordapp.com/users/436189570892300288')">Discord</button>
+                    <button class="btn cd" onclick="contact('+63 993 885 9567')">Contact Number</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-5 col-lg-4 mx-auto">
+                <form>
+                    <div class="form-group mb-2">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center mt-4 transition footer py-3">
+        <p class="mb-0 fw-bold">Harkov Presents<br>Made by <i class="border-start px-1 border-end border-success">Jhon
+                Anthony Pano</i></p>
+        <hr>
+        <p>This document/material/presentation contains images and information obtained from publicly available sources,
+            intended for educational purposes only. No copyright infringement is intended, and all rights remain with
+            the original copyright holders.
+        </p>
+
+        <p>
+            The use of copyrighted material is for fair use purposes only, in accordance with applicable Philippine laws
+            and regulations, particularly Section 185 of the Intellectual Property Code of the Philippines (Republic Act
+            No. 8293). Sources include Google Images, Google Search, Wikipedia, and other publicly available sources.
+        </p>
+    
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img id="modalImage" class="img-fluid rounded" src="" alt="Selected Image">
+            </div>
+        </div>
+    </div>
+
+    <script src="frameworks/bootstrap.min.js"></script>
+    <script src="frameworks/sweetalert2.min.js"></script>
+    <script src="frameworks/script.js"></script>
+</body>
+
+</html>
